@@ -255,4 +255,11 @@ Cross-layer rules:
 See \`docs/architecture.md\` for full details.
 "
 
+# Install/merge SpecKit constitution into .specify/memory/constitution.md
+_BOOTSTRAP_SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if [ -f "$_BOOTSTRAP_SCRIPT_DIR/bootstrap-constitution.sh" ]; then
+  echo ""
+  bash "$_BOOTSTRAP_SCRIPT_DIR/bootstrap-constitution.sh" "$PWD"
+fi
+
 echo "✅ Upgrade complete!"
